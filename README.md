@@ -36,6 +36,8 @@ Este es el fichero que he implementado por mi cuenta y es el que junto con Image
 ![Image_JS](/docs/images/ImageJS.png)
 
 ![Image_gen](/docs/images/GenerateJS_imagenes.png)
+Para este fichero hay que tener en cuenta que tenemos que **actualizar la version de openai** a la 3.1.0 y cuando lo hagamos tenemos que tener en cuenta que el fichero **.env que creamos al principio se eliminará** por lo que tendremos que volver a hacer la copia del mismo como al comienzo de la practica y **volver a poner el API KEY** para que no nos salte error de permisos
+
 
 Su visualización por pantalla es tal que así
 
