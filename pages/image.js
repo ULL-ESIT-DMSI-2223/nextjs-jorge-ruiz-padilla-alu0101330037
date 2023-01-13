@@ -1,54 +1,52 @@
+import Head from "next/head";
 import { useState } from "react";
-import styles from "./pet.module.css";
-import { Configuration, OpenAIApi } from "openai";
+import styles from "./index.module.css";
+import Link from 'next/link'
 
-const Image = () => {
-    const [prompt, setPrompt] = useState("");
-    const [result, setResult] = useState("");
-    const [loading, setLoading] = useState(false);
-    const [placeholder, setPlaceholder] = useState(
-        "Santa Claus clapping"
-    );
+export default function Home() {
+  const [promptInput, setPrompt] = useState("");
+  const [result, setResult] = useState("");
 
-    const generateImageRequest = async () => {
-        const response = await fetch("/api/generateImage", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                prompt,
-                n: 1,
-                size: "1024x1024",
-            }),
-        });
-        const data = await response.json();
-        setResult(data.result);
-    };
-    return (
-        <div className="app-main">
-            {
-                <>
-                    <h2>Generate an Image using Open AI API</h2>
 
-                    <textarea
-                        className="app-input"
-                        placeholder={placeholder}
-                        onChange={(e) => setPrompt(e.target.value)}
-                        rows="10"
-                        cols="40"
-                    />
-                    <button onClick={generateImageRequest}>Generate an Image</button>
-                    {result.length > 0 ? (
-                        <img className="result-image" src={result} alt="result" />
-                    ) : (
-                        <></>
-                    )}
-                </>
-            }
-        </div>
-    );
+  async function onSubmit(event) {
+    event.preventDefault();
+    const response = await fetch("/api/image_Generator", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ prompt: promptInput }),
+    });
+    const data = await response.json();
+    setResult(data.result);
+    setPrompt("");
+  };
+
+  return (
+    <div>
+      <Head>
+        <title>Image Generator</title>
+        <link rel="icon" href="/image_logo.png" />
+      </Head>
+
+      <main className={styles.main}>
+        <img src="/image_logo.png" className={styles.icon} />
+        <h3>Image Generator</h3>
+        <form onSubmit={onSubmit}>
+          <input
+            type="text"
+            name="animal"
+            placeholder="Ej. clown fish"
+            value={promptInput}
+            onChange={(e) => setPrompt(e.target.value)}
+          />
+          <input type="submit" value="Generate image" />
+        </form>
+        <br></br>
+        <img className="result-image" src={result} />
+        <br></br>
+      </main>
+    </div>
+  );
 
 }
-
-export default Image
