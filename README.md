@@ -64,25 +64,26 @@ Tras hacer el registro en Vercel, desplegamos el sitio y cada vez que hagamos un
 
 ## Ejercicios REST
 
-
+To get all models
 
 ![Ejercicio_1](/docs/images/Rest_1.png)
 
-
+To get info of a model
 
 ![Ejercicio_2](/docs/images/Rest_2.png)
 
-
+To get a cute image
 
 ![Ejercicio_3](/docs/images/Rest_3.png)
 
-
+To get a completion
 
 ![Ejercicio_4](/docs/images/Rest_4.png)
 
-
+To get a moderation
 
 ![Ejercicio_5](/docs/images/Rest_5.png)
+
 ## Ejercicios Dynamic Routes
 Tras haber terminado todos los ejercicios de la sección de Dynamic Routes aparecerá la siguiente puntuación
 
