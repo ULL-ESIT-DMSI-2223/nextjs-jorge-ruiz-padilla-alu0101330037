@@ -1,2 +1,87 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=9604882)
-// Write your report here
+# Informe práctica Introduction to Next.js
+
+- [Informe práctica Introduction to Next.js](#informe-práctica-introduction-to-nextjs)
+  - [Código del fichero de la API para el generador de nombres Pets.js](#código-del-fichero-de-la-api-para-el-generador-de-nombres-petsjs)
+  - [Código del fichero Index.js](#código-del-fichero-indexjs)
+  - [Código del fichero de la API para el generador de imágenes](#código-del-fichero-de-la-api-para-el-generador-de-imágenes)
+  - [Código del fichero de la API para la página 404](#código-del-fichero-de-la-api-para-la-página-404)
+  - [Despliegue en Netlify](#despliegue-en-netlify)
+  - [Despliegue en Vercel](#despliegue-en-vercel)
+  - [Ejercicios REST](#ejercicios-rest)
+  - [Ejercicios Dynamic Routes](#ejercicios-dynamic-routes)
+
+## Código del fichero de la API para el generador de nombres Pets.js
+Este fichero será el encargado de almacenar el código para que junto al fichero generate.js se pueda llevar a cabo la función de poner nombres a mascotas
+
+![Pets_JS](/docs/images/PetJS.png)
+
+![Pets_name](/docs/images/GenerateJS_nombres.png)
+
+Tras implementar este código la pagina quedará así
+
+![Pets](/docs/images/Pet.png)
+
+## Código del fichero Index.js
+Este fichero se convertirá en el menú principal de nuestro sitio, desde aquí podremos acceder a las distintas cosas que se nos exija
+
+![Index_JS](/docs/images/IndexJS.png)
+
+Tras implementar este código la pagina quedará así
+
+![Index](/docs/images/Index.png)
+
+## Código del fichero de la API para el generador de imágenes
+Este es el fichero que he implementado por mi cuenta y es el que junto con Image_Generator van a mostrar la imagen que se crea con el input que pone el usuario
+
+![Image_JS](/docs/images/ImageJS.png)
+
+![Image_gen](/docs/images/GenerateJS_imagenes.png)
+
+Su visualización por pantalla es tal que así
+
+![Image](/docs/images/Image.png)
+
+## Código del fichero de la API para la página 404
+Este fichero contiene el código de la implementación de l página que sustituye al 404 original
+
+![404JS](/docs/images/404JS.png)
+
+Aquí es donde podemos observar su visualización
+
+![404](/docs/images/404.png)
+
+## Despliegue en Netlify
+Después de seguir las indicaciones dadas, poniendo el repositorio en publico y dandole a netlify acceso a nuestro repositorio tenemos por fin desplegado nuestro sitio en Netlify
+
+![Despliegue_1](/docs/images/Despliegue_Netlify.png)
+
+## Despliegue en Vercel
+Tras hacer el registro en Vercel, desplegamos el sitio y cada vez que hagamos un push se actualizará allí tambien automáticamente a diferencia de Netlify
+
+![Despliegue_2](/docs/images/Despliegue_Vercel.png)
+
+## Ejercicios REST
+
+
+
+![Ejercicio_1](/docs/images/Rest_1.png)
+
+
+
+![Ejercicio_2](/docs/images/Rest_2.png)
+
+
+
+![Ejercicio_3](/docs/images/Rest_3.png)
+
+
+
+![Ejercicio_4](/docs/images/Rest_4.png)
+
+
+
+![Ejercicio_5](/docs/images/Rest_5.png)
+## Ejercicios Dynamic Routes
+Tras haber terminado todos los ejercicios de la sección de Dynamic Routes aparecerá la siguiente puntuación
+
+![Ejercicios completados](/docs/images/Dynamic_Routes_exercises_done%20.png)
