@@ -58,7 +58,7 @@ Después de seguir las indicaciones dadas, poniendo el repositorio en publico y 
 ![Despliegue_1](/docs/images/Despliegue_Netlify.png)
 
 ## Despliegue en Vercel
-Tras hacer el registro en Vercel, desplegamos el sitio y cada vez que hagamos un push se actualizará allí tambien automáticamente a diferencia de Netlify
+Tras hacer el registro en Vercel, desplegamos el sitio y cada vez que hagamos un push se actualizará allí tambien automáticamente
 
 ![Despliegue_2](/docs/images/Despliegue_Vercel.png)
 
